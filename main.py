@@ -35,4 +35,46 @@ if(st.button("Predict")):
                     'Tomato___Septoria_leaf_spot', 'Tomato___Spider_mites Two-spotted_spider_mite', 
                     'Tomato___Target_Spot', 'Tomato___Tomato_Yellow_Leaf_Curl_Virus', 'Tomato___Tomato_mosaic_virus',
                       'Tomato___healthy']
+        remedies = [
+    "Prune infected branches, apply fungicides",  # Apple Scab
+    "Prune infected branches, apply fungicides",  # Black Rot
+    "Remove cedar trees nearby, apply fungicides",  # Cedar Apple Rust
+    "No specific remedy needed (healthy plant)",  # Apple healthy
+    "No specific remedy needed (healthy plant)",  # Blueberry healthy
+    "Improve air circulation, apply fungicides",  # Cherry Powdery Mildew
+    "No specific remedy needed (healthy plant)",  # Cherry healthy
+    "Apply fungicides, practice crop rotation",  # Corn Cercospora Leaf Spot Gray Leaf Spot
+    "Apply fungicides, practice crop rotation",  # Corn Common Rust
+    "Apply fungicides, practice crop rotation",  # Corn Northern Leaf Blight
+    "No specific remedy needed (healthy plant)",  # Corn healthy
+    "Prune infected branches, apply fungicides",  # Grape Black Rot
+    "No specific remedy needed (healthy plant)",  # Grape Esca (Black Measles)
+    "Apply fungicides, practice crop rotation",  # Grape Leaf blight (Isariopsis Leaf Spot)
+    "No specific remedy needed (healthy plant)",  # Grape healthy
+    "Remove infected trees, control insect vectors",  # Orange Haunglongbing (Citrus greening)
+    "Apply copper-based fungicides, practice crop rotation",  # Peach Bacterial spot
+    "No specific remedy needed (healthy plant)",  # Peach healthy
+    "Apply copper-based fungicides, practice crop rotation",  # Pepper, bell Bacterial spot
+    "No specific remedy needed (healthy plant)",  # Pepper, bell healthy
+    "Remove infected plant parts, apply fungicides",  # Potato Early blight
+    "Remove infected plant parts, apply fungicides",  # Potato Late blight
+    "No specific remedy needed (healthy plant)",  # Potato healthy
+    "No specific remedy needed (healthy plant)",  # Raspberry healthy
+    "No specific remedy needed (healthy plant)",  # Soybean healthy
+    "Improve air circulation, apply fungicides",  # Squash Powdery mildew
+    "Control aphids and mites, ensure proper watering",  # Strawberry Leaf scorch
+    "No specific remedy needed (healthy plant)",  # Strawberry healthy
+    "Apply copper-based fungicides, control insect vectors",  # Tomato Bacterial spot
+    "Remove infected plant parts, apply fungicides",  # Tomato Early blight
+    "Remove infected plant parts, apply fungicides",  # Tomato Late blight
+    "Apply fungicides, improve air circulation",  # Tomato Leaf Mold
+    "Apply fungicides, practice crop rotation",  # Tomato Septoria leaf spot
+    "Apply miticides, practice crop rotation",  # Tomato Spider mites Two-spotted spider mite
+    "Apply fungicides, practice crop rotation",  # Tomato Target Spot
+    "Remove infected plants, control whiteflies",  # Tomato Tomato Yellow Leaf Curl Virus
+    "Remove infected plants, control insect vectors",  # Tomato Tomato mosaic virus
+    "No specific remedy needed (healthy plant)"  # Tomato healthy
+]
+
         st.success("Model is Predicting it's a {}".format(class_name[result_index]))
+        st.success("Remedy: {}".format(remedies[result_index]))

@@ -11,7 +11,7 @@ def model_prediction(test_image):
     return np.argmax(predictions)  # Return index of max element
 
 # Set page title and favicon
-st.set_page_config(page_title="Disease Recognition", page_icon="🌿")
+st.set_page_config(page_title="AnnVriddhi", page_icon="🌿")
 
 # Set page background color
 st.markdown(
@@ -25,7 +25,8 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-st.title("Plant Disease Recognition")
+st.title("AnnVridhhi")
+st.subheader("Plant Disease Detection")
 
 test_image = st.file_uploader("Upload an Image:")
 

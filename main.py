@@ -27,6 +27,7 @@ st.markdown(
 
 st.title("AnnVridhhi")
 st.subheader("Plant Disease Detection")
+st.write("Trained on a diverse dataset of 87,000 images of 38 distinct types of healthy and diseased plant leaves.With an accuracy rate exceeding 95\%, it identifies plant diseases and provides tailored remedies.")
 
 test_image = st.file_uploader("Upload an Image:")
 
